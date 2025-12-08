@@ -1,0 +1,350 @@
+          <img
+            src="repo/images/photo_gallery/amanda and john.jpg"
+            class="corners clickable-image"
+            alt="amanda and john"
+            onclick="openPopup('repo/images/photo_gallery/amanda and john.jpg', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/amanda and thor 3.jpg"
+            class="corners clickable-image"
+            alt="amanda and thor 3"
+            onclick="openPopup('repo/images/photo_gallery/amanda and thor 3.jpg', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/amy and brenton 2.JPG"
+            class="corners clickable-image"
+            alt="amy and brenton 2"
+            onclick="openPopup('repo/images/photo_gallery/amy and brenton 2.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/andrea and ken 3.JPG"
+            class="corners clickable-image"
+            alt="andrea and ken 3"
+            onclick="openPopup('repo/images/photo_gallery/andrea and ken 3.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/andy and trace.JPG"
+            class="corners clickable-image"
+            alt="andy and trace"
+            onclick="openPopup('repo/images/photo_gallery/andy and trace.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/angela and mike.JPG"
+            class="corners clickable-image"
+            alt="angela and mike"
+            onclick="openPopup('repo/images/photo_gallery/angela and mike.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/annie and chris.JPG"
+            class="corners clickable-image"
+            alt="annie and chris"
+            onclick="openPopup('repo/images/photo_gallery/annie and chris.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/Ashlee and Brendan 3.JPG"
+            class="corners clickable-image"
+            alt="Ashlee and Brendan 3"
+            onclick="openPopup('repo/images/photo_gallery/Ashlee and Brendan 3.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/ashlee and brendan II 2.JPG"
+            class="corners clickable-image"
+            alt="ashlee and brendan II 2"
+            onclick="openPopup('repo/images/photo_gallery/ashlee and brendan II 2.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/caitlin and shannon 3.JPG"
+            class="corners clickable-image"
+            alt="caitlin and shannon 3"
+            onclick="openPopup('repo/images/photo_gallery/caitlin and shannon 3.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/cc and ming6.JPG"
+            class="corners clickable-image"
+            alt="cc and ming6"
+            onclick="openPopup('repo/images/photo_gallery/cc and ming6.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/cc and ming8.JPG"
+            class="corners clickable-image"
+            alt="cc and ming8"
+            onclick="openPopup('repo/images/photo_gallery/cc and ming8.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/christine and tom 2.JPG"
+            class="corners clickable-image"
+            alt="christine and tom 2"
+            onclick="openPopup('repo/images/photo_gallery/christine and tom 2.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/dana and chris.JPG"
+            class="corners clickable-image"
+            alt="dana and chris"
+            onclick="openPopup('repo/images/photo_gallery/dana and chris.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/dave and gina 2.jpg"
+            class="corners clickable-image"
+            alt="dave and gina 2"
+            onclick="openPopup('repo/images/photo_gallery/dave and gina 2.jpg', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/dave and gina 5.jpg"
+            class="corners clickable-image"
+            alt="dave and gina 5"
+            onclick="openPopup('repo/images/photo_gallery/dave and gina 5.jpg', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/donna and stephen.JPG"
+            class="corners clickable-image"
+            alt="donna and stephen"
+            onclick="openPopup('repo/images/photo_gallery/donna and stephen.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/Heidi and Jack.JPG"
+            class="corners clickable-image"
+            alt="Heidi and Jack"
+            onclick="openPopup('repo/images/photo_gallery/Heidi and Jack.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/IMG_0279.JPG"
+            class="corners clickable-image"
+            alt="IMG_0279"
+            onclick="openPopup('repo/images/photo_gallery/IMG_0279.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/IMG_0838.JPG"
+            class="corners clickable-image"
+            alt="IMG_0838"
+            onclick="openPopup('repo/images/photo_gallery/IMG_0838.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/IMG_1224.JPG"
+            class="corners clickable-image"
+            alt="IMG_1224"
+            onclick="openPopup('repo/images/photo_gallery/IMG_1224.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/IMG_1231.JPG"
+            class="corners clickable-image"
+            alt="IMG_1231"
+            onclick="openPopup('repo/images/photo_gallery/IMG_1231.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/janet and gus 3.JPG"
+            class="corners clickable-image"
+            alt="janet and gus 3"
+            onclick="openPopup('repo/images/photo_gallery/janet and gus 3.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/Jennifer and Arthur.JPG"
+            class="corners clickable-image"
+            alt="Jennifer and Arthur"
+            onclick="openPopup('repo/images/photo_gallery/Jennifer and Arthur.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/jennifer and david 3.JPG"
+            class="corners clickable-image"
+            alt="jennifer and david 3"
+            onclick="openPopup('repo/images/photo_gallery/jennifer and david 3.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/jennifer and gary 2.JPG"
+            class="corners clickable-image"
+            alt="jennifer and gary 2"
+            onclick="openPopup('repo/images/photo_gallery/jennifer and gary 2.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/jennifer and raymond 2.jpg"
+            class="corners clickable-image"
+            alt="jennifer and raymond 2"
+            onclick="openPopup('repo/images/photo_gallery/jennifer and raymond 2.jpg', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/jessica and matthew 4.jpg"
+            class="corners clickable-image"
+            alt="jessica and matthew 4"
+            onclick="openPopup('repo/images/photo_gallery/jessica and matthew 4.jpg', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/Katherine and Dallas 2.JPG"
+            class="corners clickable-image"
+            alt="Katherine and Dallas 2"
+            onclick="openPopup('repo/images/photo_gallery/Katherine and Dallas 2.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/kerry and billy3.JPG"
+            class="corners clickable-image"
+            alt="kerry and billy3"
+            onclick="openPopup('repo/images/photo_gallery/kerry and billy3.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/kristal and michael.JPG"
+            class="corners clickable-image"
+            alt="kristal and michael"
+            onclick="openPopup('repo/images/photo_gallery/kristal and michael.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/kristen and michael.jpg"
+            class="corners clickable-image"
+            alt="kristen and michael"
+            onclick="openPopup('repo/images/photo_gallery/kristen and michael.jpg', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/kristin and chris 4.JPG"
+            class="corners clickable-image"
+            alt="kristin and chris 4"
+            onclick="openPopup('repo/images/photo_gallery/kristin and chris 4.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/lorena and guy.JPG"
+            class="corners clickable-image"
+            alt="lorena and guy"
+            onclick="openPopup('repo/images/photo_gallery/lorena and guy.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/lynn and chris 2.JPG"
+            class="corners clickable-image"
+            alt="lynn and chris 2"
+            onclick="openPopup('repo/images/photo_gallery/lynn and chris 2.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/lynn and chris.JPG"
+            class="corners clickable-image"
+            alt="lynn and chris"
+            onclick="openPopup('repo/images/photo_gallery/lynn and chris.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/melissa and mathew 2.JPG"
+            class="corners clickable-image"
+            alt="melissa and mathew 2"
+            onclick="openPopup('repo/images/photo_gallery/melissa and mathew 2.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/melissa and mathew 3.JPG"
+            class="corners clickable-image"
+            alt="melissa and mathew 3"
+            onclick="openPopup('repo/images/photo_gallery/melissa and mathew 3.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/reshma and shwetal2.JPG"
+            class="corners clickable-image"
+            alt="reshma and shwetal2"
+            onclick="openPopup('repo/images/photo_gallery/reshma and shwetal2.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/seattle and robert.JPG"
+            class="corners clickable-image"
+            alt="seattle and robert"
+            onclick="openPopup('repo/images/photo_gallery/seattle and robert.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/Simone and paul 2.JPG"
+            class="corners clickable-image"
+            alt="Simone and paul 2"
+            onclick="openPopup('repo/images/photo_gallery/Simone and paul 2.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/srini and jackie.JPG"
+            class="corners clickable-image"
+            alt="srini and jackie"
+            onclick="openPopup('repo/images/photo_gallery/srini and jackie.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/srini and jackie2.JPG"
+            class="corners clickable-image"
+            alt="srini and jackie2"
+            onclick="openPopup('repo/images/photo_gallery/srini and jackie2.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/stephanie and kevin's wedding pic.jpg"
+            class="corners clickable-image"
+            alt="stephanie and kevin's wedding pic"
+            onclick="openPopup('repo/images/photo_gallery/stephanie and kevin's wedding pic.jpg', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/stephanie and mark 2.jpg"
+            class="corners clickable-image"
+            alt="stephanie and mark 2"
+            onclick="openPopup('repo/images/photo_gallery/stephanie and mark 2.jpg', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/stephanie and mark email photo.JPG"
+            class="corners clickable-image"
+            alt="stephanie and mark email photo"
+            onclick="openPopup('repo/images/photo_gallery/stephanie and mark email photo.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/susan and scott 3.JPG"
+            class="corners clickable-image"
+            alt="susan and scott 3"
+            onclick="openPopup('repo/images/photo_gallery/susan and scott 3.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/susannah and josh 3.jpg"
+            class="corners clickable-image"
+            alt="susannah and josh 3"
+            onclick="openPopup('repo/images/photo_gallery/susannah and josh 3.jpg', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/wayne and jeffrey 2.JPG"
+            class="corners clickable-image"
+            alt="wayne and jeffrey 2"
+            onclick="openPopup('repo/images/photo_gallery/wayne and jeffrey 2.JPG', this.alt)"
+          />
+
+          <img
+            src="repo/images/photo_gallery/wendy and allan 4.JPG"
+            class="corners clickable-image"
+            alt="wendy and allan 4"
+            onclick="openPopup('repo/images/photo_gallery/wendy and allan 4.JPG', this.alt)"
+          />
+

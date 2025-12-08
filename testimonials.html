@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Mona Lisa Weddings</title>
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Mona Lisa Weddings - Creating unforgettable wedding moments with elegance and style. Personalized wedding services tailored to your dreams."
+    />
+    <meta
+      name="keywords"
+      content="Mona Lisa Weddings, wedding services, wedding officiant, elegant weddings, custom wedding ceremonies, wedding planner, Leominster MA weddings"
+    />
+    <meta name="author" content="Mona Lisa Weddings" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="repo/images/wedding_dress_icon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="repo/images/wedding_dress_icon.png" />
+
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="repo/images/wedding_dress_icon.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="repo/images/wedding_dress_icon.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="repo/images/wedding_dress_icon.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="repo/images/wedding_dress_icon.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="repo/images/wedding_dress_icon.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="repo/images/wedding_dress_icon.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="repo/images/wedding_dress_icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="repo/images/wedding_dress_icon.png" />
+
+    <!-- Open Graph Meta Tags (For Facebook, LinkedIn, etc.) -->
+    <meta property="og:site_name" content="Mona Lisa Weddings" />
+    <meta property="og:title" content="Mona Lisa Weddings - Elegant Wedding Services" />
+    <meta
+      property="og:description"
+      content="Mona Lisa Weddings offers personalized, elegant wedding ceremonies for couples who want a unique and unforgettable experience."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="repo/images/wedding_dress_icon.png" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Meta Tags (For Twitter Cards) -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Mona Lisa Weddings" />
+    <meta
+      name="twitter:description"
+      content="Personalized, elegant wedding ceremonies tailored to your dreams."
+    />
+    <meta name="twitter:image" content="repo/images/wedding_dress_icon.png" />
+    <meta name="twitter:image:alt" content="Mona Lisa Weddings Logo" />
+  </head>
+  <body class="noscroll">
+    <header>
+      <ul class="nav-list">
+        <li>
+          <a class="button" href="index.html"><span>HOME</span></a>
+        </li>
+        <li>
+          <a class="button" href="photos.html"><span>PHOTOS</span></a>
+        </li>
+        <li>
+          <a class="button selected" href="testimonials.html"><span>TESTIMONIALS</span></a>
+        </li>
+        <li>
+          <a class="button" href="services.html"><span>SERVICES</span></a>
+        </li>
+        <li>
+          <a class="button" href="contact.html"><span>CONTACT</span></a>
+        </li>
+      </ul>
+      <a href="contact.html">
+        <img class="profile-pic" src="repo/images/Lisa_headshot.jpg" alt="Lisa Contact Photo" />
+      </a>
+      <!-- Menu icon, hidden by default, shown on mobile and compromised viewports-->
+      <div class="menu-icon" id="menu-icon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <!-- Popup menu (hidden by default) -->
+      <div class="popup-menu" id="popup-menu">
+        <ul>
+          <li>
+            <a class="button" href="index.html"><span>HOME</span></a>
+          </li>
+          <li>
+            <a class="button" href="photos.html"><span>PHOTOS</span></a>
+          </li>
+          <li>
+            <a class="button selected" href="testimonials.html"><span>TESTIMONIALS</span></a>
+          </li>
+          <li>
+            <a class="button" href="services.html"><span>SERVICES</span></a>
+          </li>
+          <li>
+            <a class="button" href="contact.html"><span>CONTACT</span></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <button id="backToTop" class="back-to-top">↑</button>
+
+    <img src="repo/images/beach_wedding.jpg" class="background_image" />
+
+    <section class="testimonials_box">
+      <h1>Testimonials</h1>
+
+      <div class="side-by-side">
+        <img
+          src="repo/images/vows.png"
+          class="corners clickable-image"
+          alt="Lisa delivering wedding vows"
+          onclick="openPopup('repo\\images\\vows.png', this.alt)"
+        />
+
+        <div>
+          <br />
+          <p class="half-width">
+            Every ceremony is a <strong>unique</strong> and <strong>beautiful</strong> experience...
+            <br />I am truly grateful for having been a part of so many special moments
+            for local couples... I thank them all again for the privilege~
+            <br /><br />
+            Below are some reviews of my services:
+          </p>
+        </div>
+      </div>
+      <br />
+      <div class="side-by-side">
+        <div class="scroll">
+          <div class="letter-content">
+            Lisa, <br /><br />
+            Paul and I are very grateful for all you did in making our day so wonderful.
+            <br />Your kindness, diligence, and professionalism make you a rare jewel and a joy.<br />
+            Again, thank you! <br />
+            <br />Paul and Maritza
+          </div>
+        </div>
+
+        <div class="scroll">
+          <div class="letter-content">
+            Hi Lisa,<br /><br />
+            I wanted to thank you again for making our ceremony so special, and helping to make the
+            whole evening perfect. So many people have told me that they thought the ceremony was
+            very beautiful, personal and unique. That means so much and I can't thank you enough!
+            <br />
+            Thank you for the pictures too! <br /><br />Mr. and Mrs. Dan Walsh
+          </div>
+        </div>
+
+        <div class="scroll">
+          <div class="letter-content">
+            Hi Lisa, <br /><br />
+            Thank you for conducting an amazing ceremony. It was better than we had imagined. We
+            appreciate the time and effort you put into it.
+            <br />Have a great summer! <br /><br />Sue & Scott Shirrell
+          </div>
+        </div>
+
+        <div class="scroll">
+          <div class="letter-content">
+            ...thank you so much, you did an amazing job..your words were beautiful and thoughtful.
+            we loved it! <br />thank you, <br /><br />kayla boissoneau
+          </div>
+        </div>
+
+        <div class="scroll">
+          <div class="letter-content">
+            Lisa, <br /><br />
+            It has been a whirlwind of happiness and excitement ever since the wedding! <br />
+            I wish to express to you that the ceremony that you created for us was more than I had
+            ever dreamed of. You have such a beautiful spirit and it shows in your work. You
+            certainly chose the right work, or may I say it must have chosen you! <br />
+            Words really do not express how thankful I am that you came into our lives. The ceremony
+            was breathtaking and it felt so right. <br />
+            I thank you for being such a great person. I will forever cherish my memories of that
+            day. <br /><br />Peace, Jean Marie Fisher <br />
+          </div>
+        </div>
+
+        <div class="scroll">
+          <div class="letter-content">
+            Hi Lisa,<br /><br />
+            Thank you so much for the wonderful ceremony! It was so much more than I expected; funny
+            and sweet. And, I just want to say I am excited to see you again in August, when my
+            cousin George and his fiance Stacy get married. As they were going through the receiving
+            line, they asked me about you, and I told them I would give them your card. They said no
+            need, as they had already hired you, I believe. Small world! <br />Thanks again for such
+            a wonderful start to an amazing day! <br /><br />Sincerely, <br />Tracy (and Wayne)
+          </div>
+        </div>
+
+        <div class="scroll">
+          <div class="letter-content">
+            Hi Lisa,<br /><br />
+            Just wanted to say a heartfelt "thank you" to you for making our day special in its own
+            little way. I am glad I contacted you... <br />Thanks again, <br /><br />Numana
+          </div>
+        </div>
+
+        <div class="scroll">
+          <div class="letter-content">
+            Hi Lisa! <br /><br />
+            ...If I know anyone else who is getting married I will definitely give them your name,
+            since you made our wedding wonderful!!!! <br />Thanks, <br /><br />Jessica
+          </div>
+        </div>
+
+        <div class="scroll">
+          <div class="letter-content">
+            Lisa, <br /><br />George and I wanted to send you a quick note to say thank you for a
+            beautiful ceremony. We were overjoyed with how the entire day turned out. <br />Thank
+            you so much! <br /><br />Stacy and George Law
+          </div>
+        </div>
+
+        <div class="scroll">
+          <div class="letter-content">
+            Lisa, <br /><br />
+            Thank you so much for being a part of our big day! We will cherish the memories forever
+            and can't thank you enough. Our ceremony was beautiful and appreciate all your love and
+            thoughtfulness! <br /><br />The Pattens Shaun & Erica
+          </div>
+        </div>
+
+        <div class="scroll">
+          <div class="letter-content">
+            Lisa, <br /><br />
+            Thank you so much for officiating at our wedding. You have made our day perfect!
+            <br />We will remember you forever. <br /><br />Heidi and Ryan Caissie
+          </div>
+        </div>
+
+        <div class="scroll">
+          <div class="letter-content">
+            Thank You for your beautiful words on our special day! We were so happy to have you as
+            our JP! <br /><br />Chelsie &Seth
+          </div>
+        </div>
+
+        <div class="scroll">
+          <div class="letter-content">
+            Lisa, <br /><br />
+            Nathan and I could not thank you enough for all the time you spent with us to help
+            personalize our wedding. <br />All of our warmest wishes to you. <br /><br />Nathan and
+            Brenda
+          </div>
+        </div>
+
+        <div class="scroll">
+          <div class="letter-content">
+            Lisa & Tom, <br /><br />
+            Thank you Lisa for performing our ceremony. It was beautiful. Also thank you for being
+            here for us. <br /><br />Lisa and Dave
+          </div>
+        </div>
+
+        <div class="scroll">
+          <div class="letter-content">
+            Hi Lisa, <br /><br />
+            Thank you for the beautiful wedding you led for us. Also thanks for you taking pictures
+            for us. Those pictures will be the most valuable memory of our whole life. <br />Thanks
+            a lot! <br /><br />CC
+          </div>
+        </div>
+
+        <div class="scroll">
+          <div class="letter-content">
+            Lisa - <br /><br />Thank you for the fantastic service, it was exactly what we were
+            looking for and you captured us so well in such a brief time through our unhelpful
+            emails we were speechless. Again we cannot thank you enough for helping us pull this off
+            in the few days that we had allotted ourselves. <br />May you bring much joy to others
+            as you have us. <br /><br />Sincerely, <br />Amanda and Zane
+          </div>
+        </div>
+
+        <div class="scroll">
+          <div class="letter-content">
+            Lisa,<br /><br />
+            Thank you for being so kind and caring on our special day. You were awesome and thank
+            you for zipping my dress! <br />Best! <br /><br />Charlotte and Fernando
+          </div>
+        </div>
+
+        <div class="scroll">
+          <div class="letter-content">
+            Hello Lisa,<br /><br />
+            Jack and I want to say "Thank You" for a beautiful ceremony. This all came together last
+            minute (due to canceling services in Florida) but it was everything I could have dreamed
+            about and more. I know a large part is due to the man I love with all my heart and now
+            who I call my husband. <br />Once again thank you for everything you did.
+            <br /><br />Heidi and Jack
+          </div>
+        </div>
+
+        <div class="scroll">
+          <div class="letter-content">
+            Hi Lisa,<br /><br />
+            We just want to thank you for all your help!!! I know there is more to do but we are so
+            happy we found you, you're wonderful at what you do! We are so excited to see everything
+            come together and we love all the things you've shared with us! <br />Thanks again! : )
+            <br /><br />Janet & Gus
+          </div>
+        </div>
+
+        <div class="scroll">
+          <div class="letter-content">
+            Hi Lisa,<br /><br />
+            Thank you so very much for performing a difficult ceremony seamlessly. I think you did a
+            wonderful job, as does Brian. Our family was so moved by your delivery and ability to
+            add a sweet and personal touch to it. I hope you enjoyed it as well. How were the
+            bagpipes? Ha Ha. I think I was too nervous and excited and didn't really hear them. I
+            know I thought my wedding was perfect, and although I'm biased, my guests could not stop
+            talking about how beautiful and touching it was. They really enjoyed the binding
+            ceremony. ...Thank you so much again. We were lucky to have you and I hope you will stay
+            in touch. <br /><br />Our sincerest regards, <br />Jenn and Brian Haskell
+          </div>
+        </div>
+
+        <div class="scroll">
+          <div class="letter-content">
+            Lisa,<br /><br />
+            I wanted to say thank you for all that you did for us. The ceremony was beautiful and we
+            couldn't have done it without you! Also thank you for your wonderful follow up letter.
+            That was very kind of you. <br />Thank you again and I hope all is well. <br />Kind
+            Regards, <br /><br />Susan
+          </div>
+        </div>
+
+        <div class="scroll">
+          <div class="letter-content">
+            Lisa, <br /><br />Ray and I just want to thank you from the bottom of our hearts for
+            performing our ceremony. You really went above and beyond. We will always be grateful to
+            you for this. Our wedding would not have been so incredible if you weren't there to
+            share that moment with us. We just wanted to let you know that you will always be
+            considered a friend to us. <br />Thank you so much for everything.
+            <br /><br />Sincerely, <br />Raymond and Jennifer Chisholm
+          </div>
+        </div>
+
+        <div class="scroll">
+          <div class="letter-content">
+            Hello Lisa!!! <br /><br />
+            We just returned from Aruba and wanted to thank you very much for the beautiful job you
+            did on our ceremony. We absolutely loved it and ALL of our guests loved you and the
+            words we chose!! You really made it so special for us and we can't thank you enough. It
+            was just perfect! Would you happen to have a copy of it still so I can put it in our
+            album? <br />Thank you again!! <br /><br />Janet & Gus
+          </div>
+        </div>
+
+        <div class="scroll">
+          <div class="letter-content">
+            Hi Lisa, <br /><br />...You did a GREAT job!! We thoroughly enjoyed the service and
+            would recommend you to anyone we know looking for a JP for their marriage ceremony. We
+            had a great time, and are so glad to have each other as husband and wife as we continue
+            our life filled with new and interesting challenges! There is no other person I'd rather
+            do this with than Donna. Thanks again for your help, your humor, and your great
+            personality that made our event so wonderful! <br /><br />
+            Steve
+          </div>
+        </div>
+
+        <div class="scroll">
+          <div class="letter-content">
+            Hi Lisa, <br /><br />
+            We just wanted to thank you for the beautiful ceremony - ...We had many compliments on
+            your ceremony and your professionalism - thank you so much! <br /><br />Amanda and John
+          </div>
+        </div>
+
+        <div class="scroll">
+          <div class="letter-content">
+            Hi Lisa,<br /><br />
+            ...Thank you so much. The ceremony was perfect! Exactly what we were looking for! I wish
+            I had it videotaped. It's true what people kept saying, "It will be over before you know
+            it." So true! Anyway thanks again! The day was Wonderful : )
+            <br /><br />
+            Andrea (and Ken) Huckins
+          </div>
+        </div>
+
+        <div class="scroll">
+          <div class="letter-content">
+            Hi Lisa, <br /><br />
+            Just wanted to thank you for doing our wedding. It was a great time, and everything came
+            together beautifully. Everyone loved the ceremony, they thought it was very simple but
+            very lovely. Matt's sister is going to be getting in touch with you soon about doing her
+            wedding next year! <br />Thank you again!! <br /><br />Jessica and Matt
+          </div>
+        </div>
+
+        <div class="scroll">
+          <div class="letter-content">
+            Hi Lisa,<br /><br />
+            Please see our photos. Everyone is still telling us what a beautiful ceremony it was!
+            <br />Best regards, <br /><br />Ping & Dave
+          </div>
+        </div>
+
+        <div class="scroll">
+          <div class="letter-content">
+            Lisa was a wonderful choice for a justice of the peace. She was so involved in helping
+            us make our ceremony unique and special but also keeping it traditional. She had so many
+            amazing ideas and didn't stop until the ceremony was complete and perfect. Lisa took so
+            much interest in our relationship and what made us special and helped us translate that
+            into our ceremony. Lisa impressed not only my husband and I but many of our guests made
+            positive comments about her calming presence. Lisa also had a wonderful speaking voice,
+            soft and calm but also with great emotion clearly heard through the hall by all our
+            guests. She made my husband feel comfortable, which wasn't an easy thing to do,
+            considering his fear of talking in front of all our guests. She was our best choice of
+            people we chose to be part of our wedding. Lisa was our favorite person we worked with
+            during our wedding planning! She made our day and the ceremony experience memorable. We
+            can't say enough!! She was the one person who was a complete positive experience
+            beginning to end. Dedicated, caring, and it is clear she genuinely loves her job!!
+            <br />Thank you for all your hard work!! <br /><br />Stephanie and Kevin Crosby <br />-
+            October 30, 2011
+          </div>
+        </div>
+
+        <div class="scroll">
+          <div class="letter-content">
+            Thank you, Lisa! <br />it was a very special ceremony and we appreciate that you took
+            such care to make sure that it was nice for us : ) <br />Have a great day!
+            <br /><br />Dusti
+          </div>
+        </div>
+
+        <div class="scroll">
+          <div class="letter-content">
+            Lisa, <br /><br />
+            Thank you SOOOO much for helping to make our day so special - you and Sheryl were the
+            best!!! ...It all worked perfectly...so anyway thank you again so much for everything.
+            It went exactly as I planned it and couldn't have been more perfect. If I know of anyone
+            in need of a JP you will surely be the first person I recommend : ) <br /><br />Bonnie
+            Latino
+          </div>
+        </div>
+
+        <div class="scroll">
+          <div class="letter-content">
+            Hi Lisa, <br /><br />
+            Thank you for your message. I am very happy that we have you as the justice of the
+            peace. It (was) so nice a ceremony, even though it's very small, that we will remember
+            forever. Also thanks a lot for your picture of me and Ming walking to the bridge. It's
+            very sweet! <br />All the best! <br /><br />CC
+          </div>
+        </div>
+
+        <div class="scroll">
+          <div class="letter-content">
+            Lisa, <br /><br />Thank you so much for everything. The way you added my dad into our
+            wedding ceremony was such an emotional and happy feeling and there are not enough words
+            to express how much that means to me. Lisa, you have such a caring heart, it shows you
+            do this not just for an income, but also what you feel in your heart. Our Sunset Wedding
+            is a memory that will be treasured as a wedding should be, but you just made it that
+            much more special considering the circumstances. Lisa I will ALWAYS be grateful for what
+            you have done for us. We know that every couple that you marry will feel the same and
+            will see what a caring heart you have. Again thank you for the pictures and everything.
+            When we can we would love it if you would come and do a ceremony so we can renew our
+            vows, a time when my parents can be there. <br />God Bless, Lisa, you truly are a gift
+            from God. <br />God Bless, <br /><br />George and Wendy
+          </div>
+        </div>
+
+        <div class="scroll">
+          <div class="letter-content">
+            ...Everyone really enjoyed your ceremony. I'm sitting here talking with my parents and
+            never realized this was the first outdoor, non-church wedding my 84-year old mother has
+            ever attended. <br />She loved it! <br /><br />Dave
+          </div>
+        </div>
+
+        <div class="scroll">
+          <div class="letter-content">
+            Ping and I just want to thank you again for such a wonderful ceremony. Everyone has been
+            telling us what a wonderful ceremony it was, and you were a large part of the reason
+            why. ...We were very impressed with the way you wove together everything we told you and
+            built on it with your own research. Until you said it at the ceremony, I hadn't even
+            realized that Kevin was born on Moon Festival! <br /><br />Dave
+          </div>
+        </div>
+
+        <div class="scroll">
+          <div class="letter-content">
+            Thank you so much Lisa for a perfect and wonderful ceremony!! When any of my friends get
+            married (I) am giving them your information! We had such a beautiful day, thank you so
+            much for all of your hard work and wisdoms! <br /><br />XO <br />Wendy and Alan Autino!
+          </div>
+        </div>
+
+        <div class="scroll">
+          <div class="letter-content">
+            Lisa, <br /><br />
+            Thank you so much for all of your help in making our wedding day special! You did a
+            wonderful job at our ceremony and you made both of us feel so comfortable with
+            everything. We got so many compliments from our guests about you and the ceremony.
+            <br />Thanks again for everything! <br />It was a pleasure working with you during such
+            a special time! <br /><br />Sincerely, <br />Amanda and Denis Melanson <br />(Married
+            October, 2011)
+          </div>
+        </div>
+
+        <div class="scroll">
+          <div class="letter-content">
+            ...By the way - my dad said the ceremony and all the words said, was his favorite part
+            of the whole day. <br />Happy Thanksgiving to you as well. <br /><br />Stephanie
+            (Lawrence) and Kevin Crosby
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Copyright &copy;
+      <script type="text/javascript">
+        document.write(new Date().getFullYear());
+      </script>
+      Mona Lisa Weddings – All Rights Reserved.
+    </footer>
+
+    <div id="popup-modal" class="modal">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <img id="popup-image" class="modal-content" />
+      <iframe id="popup-pdf" class="modal-content" style="display: none"></iframe>
+      <div id="caption"></div>
+    </div>
+
+    <script src="repo/js/index.js"></script>
+  </body>
+</html>

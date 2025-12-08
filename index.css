@@ -1,0 +1,833 @@
+/* Add some basic styling */
+:root {
+  --mycolor: #cac5de; /* You can set this to any color you want */
+  --darkmycolor: #5a527a; /* You can set this to any color you want */
+  --background-color: #e6e6e6; /* Default light gray */
+  --text-color: #5e5e5e;
+  --section-color: #ffffff;
+  --head-foot-color: #ffffff;
+  --pale-yellow: #fffad1;
+  --pale-pink: #ffe8fd;
+  --pale-blue: #c5e5ff;
+}
+
+.my-color {
+  color: var(--mycolor);
+}
+
+/* Apply smooth scrolling globally */
+html {
+  scroll-behavior: smooth;
+  font-family: "Great Vibes", Georgia, serif, system-ui;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+/* Keyframes for the pulsing effect on underlined text */
+@keyframes underlinePulse {
+  0% {
+    color: var(--text-color);
+  }
+  50% {
+    color: var(--mycolor); /* theme pulse */
+  }
+  100% {
+    color: var(--text-color);
+  }
+}
+
+.underline:hover {
+  animation: underlinePulse 0.8s infinite;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500; /* Medium */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.noscroll {
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.noscroll {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.title_box {
+  padding: 10vh;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+}
+
+.title {
+  font-family: "Great Vibes", Georgia, serif, system-ui;
+  color: var(--darkmycolor);
+  text-align: center;
+  font-size: min(8vh, 8vw);
+  padding: 5vh;
+  background-color: color-mix(in srgb, var(--background-color) 70%, transparent);
+  border-radius: 2vh 2vh 12vh 2vh;
+}
+
+.contact_box {
+  margin: 3vh;
+  background-color: color-mix(in srgb, var(--mycolor) 80%, transparent);
+  border-radius: 2vh 2vh 10vh 2vh;
+}
+
+.photo_box {
+  margin: 3vh;
+  background-color: color-mix(in srgb, var(--pale-yellow) 80%, transparent);
+  border-radius: 2vh 2vh 10vh 2vh;
+}
+
+.services_box {
+  margin: 3vh;
+  background-color: color-mix(in srgb, var(--pale-pink) 80%, transparent);
+  border-radius: 2vh 2vh 10vh 2vh;
+}
+
+.testimonials_box {
+  margin: 3vh;
+  background-color: color-mix(in srgb, var(--pale-blue) 80%, transparent);
+  border-radius: 2vh 2vh 10vh 2vh;
+}
+
+.scroll {
+  width: max(30vw, 20vh);
+  position: relative;
+  max-height: 70vh; /* Limit the height to 70% of the viewport height */
+  overflow-y: auto; /* Enables vertical scrolling when content exceeds max-height */
+  padding: min(10vh, 14vw);
+  background-image: url("repo/images/textured_paper.jpg");
+  background-size: cover;
+  background-position: center;
+  -webkit-mask: linear-gradient(to right, transparent, black 10%, black 90%, transparent),
+    linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+  mask: linear-gradient(to right, transparent, black 10%, black 90%, transparent),
+    linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-composite: intersect;
+  mask-composite: intersect;
+}
+
+.scroll .letter-content {
+  text-align: left;
+  position: relative; /* Changed from absolute to relative */
+  font-family: "Georgia", serif;
+  line-height: 5vh;
+  font-size: min(4vh, 6vw);
+  color: #333;
+  white-space: pre-line;
+  z-index: 1;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: -6vh; /* Initially hidden below the screen */
+  right: 2vh;
+  width: min(10vh, 20vw);
+  height: min(10vh, 20vw);
+  background-color: var(--darkmycolor);
+  color: white;
+  border: none;
+  border-radius: 2vh 2vh 5vh 2vh;
+  font-size: min(4vh, 6vw);
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.half-width {
+  width: 50vw;
+
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Keyframes for the pulsing effect on border */
+@keyframes top_hover {
+  0% {
+    background-color: var(--darkmycolor);
+  }
+  50% {
+    background-color: #000;
+  }
+  100% {
+    background-color: var(--darkmycolor);
+  }
+}
+
+.back-to-top:hover {
+  animation: top_hover 0.8s infinite;
+}
+
+.back-to-top.show {
+  bottom: 2vh; /* Moves it up into view */
+  opacity: 1;
+}
+
+.corners {
+  border: 0.5vh solid var(--darkmycolor);
+  border-radius: 2vh 2vh 8vh 2vh;
+}
+
+header {
+  font-size: 2.2vh;
+  height: 3vh;
+  border-radius: 0 0 7vh 2vh;
+  background: var(--head-foot-color);
+  color: var(--text-color);
+  position: relative;
+  padding: 5vh;
+  z-index: 12;
+}
+
+/* Create a separate background layer */
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--head-foot-color);
+  border-radius: inherit; /* Ensure it matches the header's border-radius */
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-list li {
+  margin: 0 0.2vw;
+}
+
+/* Menu Icon Styles */
+.menu-icon {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 5vh;
+  height: 3vh;
+  position: absolute;
+  left: 3vh; /* Right-aligned */
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 2vh;
+  cursor: pointer;
+}
+
+.menu-icon:hover {
+  background-color: var(--background-color);
+  border-radius: 1vh 1vh 4vh 1vh;
+}
+
+.menu-icon .bar {
+  width: 3vh;
+  height: 3px;
+  background-color: var(--darkmycolor);
+  border-radius: 3px;
+}
+
+/* Popup Menu Styles */
+.popup-menu {
+  display: none; /* Hidden by default */
+  position: relative;
+  top: 7.9vh; /* Position just below the header */
+  left: -5vh;
+  width: fit-content; /* Shrinks the ul to fit the largest li */
+  height: auto; /* Adjust the height to fit the screen minus the header height */
+  background-color: var(--head-foot-color);
+  z-index: -1;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(-100%); /* Initially offscreen above */
+  border-radius: 0 0 7vh 2vh;
+}
+
+.popup-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-menu li {
+  margin: 1vh;
+  text-align: center;
+  display: flex;
+  width: auto;
+  text-align: left;
+}
+
+/* Media query to show the menu icon when aspect ratio falls below 1.15 */
+@media (max-aspect-ratio: 1.15/1) {
+  .nav-list {
+    display: none; /* Hide the navigation links */
+  }
+
+  .menu-icon {
+    display: flex; /* Show the menu icon */
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  /* Keep list centered */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.2vw; /* Replace individual li margins */
+}
+
+li {
+  display: inline-block;
+  /* Remove margin since we're using gap in ul */
+}
+
+.profile-pic {
+  border-radius: 50%;
+  border: 0.4vh solid var(--darkmycolor);
+  height: min(10vh, 12vw);
+  transition: border 0.3s ease;
+
+  overflow: hidden; /* Required for pseudo-elements */
+  /* Modify position properties */
+  position: absolute;
+  right: 5vh; /* Match header padding */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+p {
+  font-size: min(3vh, 5vw);
+  color: var(--text-color);
+  transition: color 0.3s;
+  margin: 0;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.medium_font {
+  font-size: min(2.5vh, 5vw);
+}
+
+.side-by-side {
+  display: flex; /* Use flexbox to align items side by side */
+  align-items: center; /* Vertically align the items */
+  justify-content: space-evenly; /* Space them out evenly */
+  flex-wrap: wrap; /* Allows items to wrap */
+}
+
+@media (max-aspect-ratio: 1.5/1) {
+  .side-by-side {
+    flex-direction: column; /* Stack items vertically when aspect ratio < 1.5:1 */
+    align-items: center; /* Align items to the left when stacked */
+    justify-content: flex-start; /* Align items to the top when stacked */
+  }
+  .inverted {
+    display: flex;
+    flex-direction: column-reverse; /* Stacks content from bottom to top */
+  }
+}
+
+/* Keyframes for the pulsing effect on border */
+@keyframes borderAnimation {
+  0% {
+    border-color: var(--darkmycolor);
+  }
+  50% {
+    border-color: var(--background-color); /* White pulse */
+  }
+  100% {
+    border-color: var(--darkmycolor);
+  }
+}
+
+/* Apply the pulse effect on hover */
+.profile-pic:hover {
+  animation: borderAnimation 0.8s infinite;
+}
+
+section {
+  text-align: center;
+  background: var(--section-color);
+  border-radius: 2vh 2vh 0 0;
+  padding: 2vh 2vh 0 2vh;
+}
+
+h1 {
+  font-family: "Great Vibes", Georgia, serif, system-ui;
+  font-size: min(5vh, 7vw);
+  color: var(--darkmycolor);
+  transition: color 0.3s;
+  margin: 0;
+  padding: 3vh;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+
+h1::before,
+h1::after {
+  content: "";
+  flex: 1;
+  height: 0.15vh;
+  background-color: var(--darkmycolor);
+  max-width: 35vw;
+}
+
+h2 {
+  font-size: 5vh;
+  /* color: var(--text-color); */
+  color: #000;
+  transition: color 0.3s;
+  padding: 1vh;
+  margin: auto;
+}
+
+h3 {
+  font-size: 4vh;
+  /* color: var(--text-color); */
+  color: #000;
+  transition: color 0.3s;
+  margin: 2vh 0;
+}
+
+h4 {
+  font-size: 4vh;
+  color: var(--text-color);
+  transition: color 0.3s;
+  margin: 2vh 0;
+}
+
+a h3:hover {
+  color: var(--darkmycolor);
+  transition: 0.3s;
+  text-decoration: underline;
+}
+
+footer {
+  font-size: min(2vh, 3vw);
+  border-radius: 2vh 2vh 0 0;
+  background: var(--background-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 2vh;
+  position: relative;
+  bottom: 0;
+}
+
+.project {
+  padding: 2vh 0.2vh;
+  margin-bottom: 1vh;
+}
+
+.project img {
+  max-width: 100%;
+}
+
+/* Button Styling */
+.button {
+  font-family: Quicksand, sans-serif;
+  padding: 1.2vh 2.5vh;
+  font-weight: normal;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  min-width: 10vw;
+  color: var(--text-color); /* Default text color */
+  border-radius: 1vh 1vh 3vh 1vh; /* Rounded corners */
+  transition: 0.5s;
+  position: relative;
+  z-index: 1;
+}
+
+.button:hover {
+  color: var(--darkmycolor);
+  background-color: var(--background-color);
+}
+
+.selected {
+  color: var(--darkmycolor);
+  font-weight: bolder;
+}
+
+.selected:hover {
+  color: #000;
+  background-color: var(--background-color);
+}
+
+/* Keyframes for the pulsing effect */
+@keyframes pulseAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 0.3; /* Less visible start */
+  }
+  50% {
+    transform: scale(1); /* More significant scaling */
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.3; /* Back to less visible */
+  }
+}
+
+.background_image {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 100vw; /* Ensures full width */
+  height: auto; /* Maintains aspect ratio */
+  min-height: 100vh; /* Ensures it fills the viewport */
+
+  object-fit: cover; /* Ensures no distortion */
+  z-index: -10;
+}
+
+table {
+  margin: 2vh 0;
+  border-collapse: collapse;
+  width: 25vw; /* Adjust width as needed */
+  border: 0.5vh solid var(--darkmycolor);
+  border-radius: 2vh 2vh 8vh 2vh;
+  overflow: hidden; /* Ensures the border radius applies */
+}
+
+th,
+tr,
+td {
+  font-size: min(2vh, 3vw);
+  border: 0.2vh solid #000;
+  background-color: var(--head-foot-color);
+  color: var(--darkmycolor);
+  padding: 2vh;
+  text-align: center;
+}
+
+th {
+  background-color: var(--darkmycolor);
+  color: var(--pale-pink);
+}
+
+th a {
+  color: var(--pale-pink);
+  text-decoration: underline;
+}
+
+.subtext {
+  font-size: 1.5vh;
+  font-weight: bold;
+  word-wrap: break-word;
+}
+
+input,
+textarea {
+  user-select: none;
+  font-family: Quicksand, sans-serif;
+  font-size: min(2vh, 5vw);
+  margin: 2vh 0 2vh 0;
+  padding: 2vh;
+  background-color: var(--mycolor);
+  color: #000;
+  border-width: 0.8vh;
+  border-radius: 2vh 2vh 5vh 2vh;
+  border-color: var(--darkmycolor);
+  border-style: outset;
+  width: min(70vh, 60vw);
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+  outline: 0;
+}
+
+.personals {
+  width: min(45vh, 60vw);
+}
+
+.message {
+  min-height: calc(6 * min(3vh, 5vw)); /* 4 lines tall, assuming 1.2em line height */
+  line-height: min(3vh, 5vw); /* Adjust based on font size */
+  resize: vertical; /* Allow user to expand */
+}
+
+.emailForm {
+  width: min(100vh, 88vw);
+  margin-inline: auto;
+}
+
+.submit {
+  color: #fff;
+  background-color: var(--darkmycolor);
+  font-size: min(4vh, 10vw);
+  margin: 2vh;
+}
+
+.submit:hover {
+  color: #000;
+  animation: pulse 0.8s infinite;
+}
+
+.button-content {
+  display: flex;
+  align-items: center; /* Vertically align text and image */
+  justify-content: center; /* Center everything inside */
+  gap: 1vh; /* Adds spacing between text and image */
+}
+
+.logo {
+  height: min(6vh, 10vw);
+  translate: 0 0.2vh;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+/* Keyframes for the pulsing effect on border */
+@keyframes pulse {
+  0% {
+    background-color: var(--darkmycolor);
+  }
+  50% {
+    background-color: var(--background-color); /* White pulse */
+  }
+  100% {
+    background-color: var(--darkmycolor);
+  }
+}
+
+.clickable-image {
+  height: min(40vh, 40vw);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.clickable-image:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+.contact-logo {
+  height: 10vh;
+  margin-top: 2vh;
+  transition: 0.3s;
+}
+
+.contact-logo:hover {
+  opacity: 0.7;
+}
+
+.label {
+  font-size: 2.5vh;
+  margin-top: -2.5vh;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Dynamic column layout */
+  gap: 2.5vh;
+  padding: 1vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Images inside the gallery */
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 2vh 2vh 7vh 2vh; /* Optional: rounded corners */
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Responsive grid settings */
+@media (min-width: 1024px) {
+  /* Landscape mode */
+  .gallery {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  /* Medium screens - 3 columns */
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-aspect-ratio: 1.2/1) {
+  /* Medium screens - 3 columns */
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  /* Small screens - 1 column */
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  padding-top: 10vh; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90vw;
+  max-height: 80vh;
+  width: 90vw;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 77vw;
+  max-width: 84vw;
+  text-align: center;
+  color: #ccc;
+  padding: 1.2vh 0;
+  font-size: 3vh;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.5s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 1.8vh;
+  right: 4.2vh;
+  color: #f1f1f1;
+  font-size: 4.8vh;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Responsive Columns - Stacked on Small Screens */
+@media only screen and (max-width: 84vw) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/* Styles for PDF iframe */
+#popup-pdf {
+  width: 90vw;
+  height: 90vh;
+  display: none;
+  border: none;
+}
+
+#contact a {
+  display: inline-block; /* Makes the anchor tag fit the image's size */
+}
+
+@keyframes glow {
+  0% {
+    filter: drop-shadow(0 0 0 gold);
+  }
+  50% {
+    filter: drop-shadow(0 0 0.8vh gold);
+  }
+  100% {
+    filter: drop-shadow(0 0 0 gold);
+  }
+}
+
+.glow-effect {
+  position: relative;
+  animation: glow 2.5s infinite;
+}
+
+/* Adding a glowing background behind the transparent PNG */
+.glow-effect::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.8) 0%, rgba(255, 215, 0, 0) 70%);
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  border-radius: 50%;
+  animation: glow 2.5s infinite;
+}

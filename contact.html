@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Mona Lisa Weddings</title>
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Mona Lisa Weddings - Creating unforgettable wedding moments with elegance and style. Personalized wedding services tailored to your dreams."
+    />
+    <meta
+      name="keywords"
+      content="Mona Lisa Weddings, wedding services, wedding officiant, elegant weddings, custom wedding ceremonies, wedding planner, Leominster MA weddings"
+    />
+    <meta name="author" content="Mona Lisa Weddings" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="repo/images/wedding_dress_icon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="repo/images/wedding_dress_icon.png" />
+
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="repo/images/wedding_dress_icon.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="repo/images/wedding_dress_icon.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="repo/images/wedding_dress_icon.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="repo/images/wedding_dress_icon.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="repo/images/wedding_dress_icon.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="repo/images/wedding_dress_icon.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="repo/images/wedding_dress_icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="repo/images/wedding_dress_icon.png" />
+
+    <!-- Open Graph Meta Tags (For Facebook, LinkedIn, etc.) -->
+    <meta property="og:site_name" content="Mona Lisa Weddings" />
+    <meta property="og:title" content="Mona Lisa Weddings - Elegant Wedding Services" />
+    <meta
+      property="og:description"
+      content="Mona Lisa Weddings offers personalized, elegant wedding ceremonies for couples who want a unique and unforgettable experience."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="repo/images/wedding_dress_icon.png" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Meta Tags (For Twitter Cards) -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Mona Lisa Weddings" />
+    <meta
+      name="twitter:description"
+      content="Personalized, elegant wedding ceremonies tailored to your dreams."
+    />
+    <meta name="twitter:image" content="repo/images/wedding_dress_icon.png" />
+    <meta name="twitter:image:alt" content="Mona Lisa Weddings Logo" />
+  </head>
+  <body class="noscroll">
+    <header>
+      <ul class="nav-list">
+        <li>
+          <a class="button" href="index.html"><span>HOME</span></a>
+        </li>
+        <li>
+          <a class="button" href="photos.html"><span>PHOTOS</span></a>
+        </li>
+        <li>
+          <a class="button" href="testimonials.html"><span>TESTIMONIALS</span></a>
+        </li>
+        <li>
+          <a class="button" href="services.html"><span>SERVICES</span></a>
+        </li>
+        <li>
+          <a class="button selected" href="contact.html"><span>CONTACT</span></a>
+        </li>
+      </ul>
+      <a href="contact.html">
+        <img class="profile-pic" src="repo/images/Lisa_headshot.jpg" alt="Lisa Contact Photo" />
+      </a>
+      <!-- Menu icon, hidden by default, shown on mobile and compromised viewports-->
+      <div class="menu-icon" id="menu-icon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <!-- Popup menu (hidden by default) -->
+      <div class="popup-menu" id="popup-menu">
+        <ul>
+          <li>
+            <a class="button" href="index.html"><span>HOME</span></a>
+          </li>
+          <li>
+            <a class="button" href="photos.html"><span>PHOTOS</span></a>
+          </li>
+          <li>
+            <a class="button" href="testimonials.html"><span>TESTIMONIALS</span></a>
+          </li>
+          <li>
+            <a class="button" href="services.html"><span>SERVICES</span></a>
+          </li>
+          <li>
+            <a class="button selected" href="contact.html"><span>CONTACT</span></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <button id="backToTop" class="back-to-top">↑</button>
+
+    <img src="repo/images/wedding_seats.jpg" class="background_image" />
+
+    <section class="contact_box">
+      <h1>Contact Me</h1>
+      <p>Congratulations on your plans to be married, and thank you for inquiring about me!</p>
+      <form id="emailForm" class="emailForm">
+        <input type="text" placeholder="Name" class="personals" id="name" required />
+        <input type="text" placeholder="Email" class="personals" id="email" required />
+        <input type="text" placeholder="Phone" class="personals" id="phone" required />
+        <br />
+        <input type="text" placeholder="Wedding Date and Time" id="weddingDate" required />
+        <input type="text" placeholder="Wedding Venue" id="weddingVenue" required />
+        <textarea class="message" placeholder="Message" id="message" rows="4" required></textarea>
+        <br />
+        <button type="submit" class="button submit">
+          <span class="button-content">
+            Send Email
+            <img src="repo/images/email_logo.png" alt="email logo" class="logo" />
+          </span>
+        </button>
+      </form>
+      <p class="form_result"></p>
+    </section>
+
+    <footer>
+      Copyright &copy;
+      <script type="text/javascript">
+        document.write(new Date().getFullYear());
+      </script>
+      Mona Lisa Weddings – All Rights Reserved.
+    </footer>
+
+    <div id="popup-modal" class="modal">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <img id="popup-image" class="modal-content" />
+      <iframe id="popup-pdf" class="modal-content" style="display: none"></iframe>
+      <div id="caption"></div>
+    </div>
+    <script src="repo/js/index.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "yxptFDOiXydkwDfOp",
+        });
+      })();
+    </script>
+    <script src="repo/js/contact.js"></script>
+  </body>
+</html>
