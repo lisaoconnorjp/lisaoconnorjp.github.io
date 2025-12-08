@@ -1,5 +1,3 @@
-# Thomas O'Connor's Porfolio
+# LisaOCconnorJP : MonaLisaWeddings
 
-My static repository for coursework, projects, and contact information.
-
-Feel free to reach out with suggestions or inquries.
+Feel free to reach out with inquries.
