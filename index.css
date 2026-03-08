@@ -2,7 +2,6 @@
 :root {
   --mycolor: #cac5de; /* You can set this to any color you want */
   --darkmycolor: #5a527a; /* You can set this to any color you want */
-  --dark-pink: #b41397;
   --background-color: #e6e6e6; /* Default light gray */
   --text-color: #5e5e5e;
   --section-color: #ffffff;
@@ -70,7 +69,7 @@ body {
 .title_box {
   padding: 10vh;
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Center horizontally */
 }
 
 .title {
@@ -79,59 +78,8 @@ body {
   text-align: center;
   font-size: min(8vh, 8vw);
   padding: 5vh;
-
   background-color: color-mix(in srgb, var(--background-color) 70%, transparent);
   border-radius: 2vh 2vh 12vh 2vh;
-
-  position: relative;
-}
-
-/* glint layer */
-.title::after {
-  content: "Mona Lisa Weddings \A Justice of the Peace";
-  white-space: pre;
-
-  position: absolute;
-  inset: 0;
-
-  font-family: inherit;
-  font-size: inherit;
-  text-align: center;
-
-  padding: inherit;
-
-  background: linear-gradient(
-    120deg,
-    transparent 45%,
-    var(--dark-pink) 50%,
-    transparent 55%
-  );
-
-  background-size: 200% 100%;
-  animation: glint 8s linear infinite;
-
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-
-  pointer-events: none;
-}
-
-@keyframes glint {
-  0% {
-    background-position: -200% 0;
-    transform: rotate(0.1deg);
-  }
-
-  /* 50% {
-    background-position: 0% 0;
-    transform: rotate(1deg);
-  } */
-
-  100% {
-    background-position: 200% 0;
-    transform: rotate(0.1deg);
-  }
 }
 
 .contact_box {
