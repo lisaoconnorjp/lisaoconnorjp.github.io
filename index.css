@@ -528,9 +528,10 @@ footer {
 
 table {
   margin: 2vh 0;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   width: 25vw; /* Adjust width as needed */
-  border: 0.5vh solid var(--darkmycolor);
+  border: 0.25vh solid var(--darkmycolor);
   border-radius: 2vh 2vh 8vh 2vh;
   overflow: hidden; /* Ensures the border radius applies */
 }
