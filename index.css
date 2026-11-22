@@ -115,9 +115,11 @@ body {
   background-image: url("repo/images/textured_paper.jpg");
   background-size: cover;
   background-position: center;
-  -webkit-mask: linear-gradient(to right, transparent, black 10%, black 90%, transparent),
+  -webkit-mask:
+    linear-gradient(to right, transparent, black 10%, black 90%, transparent),
     linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
-  mask: linear-gradient(to right, transparent, black 10%, black 90%, transparent),
+  mask:
+    linear-gradient(to right, transparent, black 10%, black 90%, transparent),
     linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
   -webkit-mask-composite: intersect;
   mask-composite: intersect;
@@ -154,7 +156,9 @@ body {
   align-items: center;
   justify-content: center;
   opacity: 0;
-  transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition:
+    bottom 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
   box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.5);
   z-index: 10;
 }
@@ -215,6 +219,10 @@ header::before {
   height: 100%;
   background: var(--head-foot-color);
   border-radius: inherit; /* Ensure it matches the header's border-radius */
+}
+
+header.visible {
+  animation: reveal 1.2s ease both;
 }
 
 .nav-list {
@@ -726,7 +734,6 @@ textarea {
   }
 }
 
-
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -847,4 +854,23 @@ textarea {
   z-index: -1;
   border-radius: 50%;
   animation: glow 2.5s infinite;
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(2vh);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal {
+  opacity: 0;
+}
+
+.reveal.visible {
+  animation: reveal 1.2s ease both;
 }

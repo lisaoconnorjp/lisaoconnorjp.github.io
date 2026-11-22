@@ -192,3 +192,33 @@ document.addEventListener("DOMContentLoaded", function () {
 // Close the popup menu when the viewport resizes
 window.addEventListener('resize', closePopupMenu);
 
+// for revealing at certain scroll states:
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".reveal");
+  const observers = new Map();
+
+  elements.forEach(el => {
+    const ratio = parseFloat(el.dataset.threshold) || 0.1;
+    const margin = `0px 0px -${ratio * 100}% 0px`;
+    // const margin = `0px`;
+
+    if (!observers.has(margin)) {
+      observers.set(
+        margin,
+        new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        }, {
+          rootMargin: margin,
+          threshold: 0
+        })
+      );
+    }
+
+    observers.get(margin).observe(el);
+  });
+});
